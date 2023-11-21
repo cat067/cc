@@ -1,0 +1,33 @@
+->Run "cmd" as Administration and connect to hadoop server using following commands.
+
+	-> hdfs namenode -format
+
+Now move to hadoop\sbin.
+
+	->start-all
+
+                                     
+->Make input directory in HDFS
+
+	-hadoop fs -mkdir /input_dir
+
+
+->Copy the input text file in the input directory.
+
+	-hadoop fs -put C:/input_file.txt /input_dir
+
+->Verify input_file.txt available in HDFS input directory.
+
+	-hadoop fs -ls /input_dir/
+
+->You can verify content.
+
+	-hadoop dfs -cat /input_dir/input_file.txt
+
+->Now work for word count.
+
+	-hadoop jar C:/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.0.jar wordcount /input_dir /output_dir
+
+->Verify output.
+
+	-hadoop dfs -cat /output_dir/*

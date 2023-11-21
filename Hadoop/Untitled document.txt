@@ -1,0 +1,12 @@
+﻿Hadoop installation link 
+
+
+https://muhammadbilalyar.github.io/blogs/How-to-install-Hadoop-on-Window-10
+
+
+
+
+Wordcount program 
+
+
+https://github.com/arjungautam1/WordCountHadoop
